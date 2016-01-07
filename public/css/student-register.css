@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  background-image: url('../images/bb1.jpg');
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+
+form {
+  width: 444px;
+  margin: auto;
+}
+p {
+  color: red;
+  font-size: 18px;
+}
+
+.rg_login a {
+  float: right;
+  margin-right: 100px;
+  color: #233;
+  text-decoration: underline;
+}
+

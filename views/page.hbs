@@ -1,0 +1,34 @@
+{{!< layout/html-struct}}
+
+{{#contentFor 'pageStyles'}}
+  <link rel="stylesheet" href="../css/page.css">
+  <script type="text/javascript" src="/js/formSerializer.js"></script>
+{{/contentFor}}
+  <div class="panel panel-primary" id='student-info-frame'>
+   <div class="panel-body" id='student-info'>
+      <h4>{{name}}</h4>
+      <table class="table">
+         <tr>
+           <td>姓名：</td>
+           <td>时间：100分钟</td>
+           <td>班级：</td>
+           </tr>
+      </table>
+
+      <div class="">
+        <h2>一.选择题</h2>
+        {{{singleChoice singleChoice}}}
+      </div>
+
+      <div class="">
+        <h2>二.填空题</h2>
+        {{{addBlank addBlank}}}
+      </div>
+
+      <div class="">
+        <h2>三.多选题</h2>
+        {{{manyChoice manyChoice}}}
+      </div>
+
+   </div>
+  </div>

@@ -1,0 +1,22 @@
+{{!< default}}
+{{#contentFor 'pageStyles'}}
+  <link rel="stylesheet" href="css/teach-stu-layout.css"> {{{block "teacherPageStyles"}}}
+{{/contentFor}}
+
+<div class="nav-topPannel">
+  <div class="nav-navPills">
+    <ul class="nav nav-pills" id="navPill">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">老师信息管理</a></li>
+      <li><a href="#">老师考试管理</a></li>
+      <li><a class="checkpage">老师考卷查询</a></li>
+      <li><a href="#">老师信息修改</a></li>
+    </ul>
+  </div>
+  <div class="nav-topCancel">
+    <button id="btn-cancel" type="button" class="btn btn-danger">退出系统</button>
+  </div>
+</div>
+<div class="container">
+  {{{body}}}
+</div>

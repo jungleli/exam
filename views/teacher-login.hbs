@@ -1,0 +1,28 @@
+{{!< layout/default}}
+{{#contentFor 'pageStyles'}}
+  <link href="css/teacher-login.css" rel="stylesheet">
+  <script type="text/javascript" src="js/teacher-login.js"></script>
+  <script src="js/login-input-status.js"></script>
+{{/contentFor}}
+
+<body>
+  <div class="container">
+
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+
+      </div>
+      <label class="error"></label>
+      <button class="btn btn-lg btn-primary btn-block" id="teacherLoginId" type="button">Sign in</button>
+    </form>
+
+  </div>
+</body>

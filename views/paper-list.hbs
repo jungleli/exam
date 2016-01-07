@@ -1,0 +1,58 @@
+{{!< layout/student-layout}}
+{{#contentFor 'studentPageStyles'}}
+  <link rel="stylesheet" href="css/paper-list.css">
+  <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+  <script src="js/jquery-cookie.js"></script>
+{{/contentFor}}
+<script type="text/javascript">
+    var cook = $.cookie('studentId');
+    $(function () {
+        if (cook == null) {
+            window.location = "/";
+        }
+    })
+</script>
+<header id='header'>
+  学生试卷列表
+</header>
+<table id='paperList'>
+  <thead>
+    <tr>
+      <td>
+        试卷编号
+      </td>
+      <td>
+        试卷名称
+      </td>
+      <td>
+        状态
+      </td>
+      <td>
+        点击答题
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each paperList}}
+      <tr>
+        <td>
+          {{id}}
+        </td>
+        <td>
+          {{paperName}}
+        </td>
+        <td>
+          {{status}}
+        </td>
+        <td id='deal'>
+          <a href="{{url}}?paperId={{id}}">
+            <p>
+    <button type="button" class="btn btn-primary btn-sm">{{deal}}</button>
+
+  </p>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

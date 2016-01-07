@@ -1,0 +1,31 @@
+body {
+  background: url(../images/paper-list-backgound.jpg);
+  background-size: 100% auto;
+}
+#header {
+  margin: 30px auto 10px auto;
+  text-align: center;
+  color: #4682B4;
+  font-weight: bold;
+  font-size: 30px;
+}
+#paperList {
+  margin: 0 auto;
+  width: 800px;
+  border-collapse: collapse;
+  background-color: #FFF;
+}
+#paperList td {
+  text-align: center;
+  color: #1E90FF;
+  border-top-color: #87CEEB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  line-height: 40px;
+}
+#paperList tbody tr:nth-of-type(odd) {
+  background-color: rgb(249, 249, 249);
+}
+button {
+  margin: 10px;
+}

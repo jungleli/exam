@@ -1,0 +1,48 @@
+.model {
+  width: 1100px;
+  float: left;
+  margin: 20px;
+}
+#addItem {
+  margin: 0 auto;
+  width: 400px;
+  float: left;
+}
+#reset {
+  margin: 0 50px;
+}
+#addItem >.content {
+  display: none;
+}
+.panel-heading {
+  background: lightblue;
+}
+#addItem >.fill {
+  display: block;
+}
+.showPaper {
+  float: left;
+  width: 500px;
+  margin: -10px;
+  float: left;
+}
+p {
+  color: red;
+}
+.prompt {
+  display: none;
+}
+#paperName {
+  margin-right: 30px;
+}
+#subjectName {
+  margin-right: 30px;
+}
+#score {
+  margin-right: 90px;
+}
+.createPaper{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
